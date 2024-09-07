@@ -47,7 +47,7 @@ _________________________________________
       {
         "name": "quick_reply",
         "buttonParamsJson": JSON.stringify({
-          display_text: "GHOST-MD SPEED",
+          display_text: "PING",
           id: `${prefix}ping`
         })
       }
