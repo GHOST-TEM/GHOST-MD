@@ -11,7 +11,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
     const end = new Date().getTime();
     const responseTime = (end - start) / 1000;
 
-    const text = `*👻𝗚𝗛𝗢𝗦𝗧-𝗠𝗗 𝗦𝗣𝗘𝗘𝗗: ${responseTime.toFixed(2)} s_*`;
+    const text = `*🌟𝙂𝙃𝙊𝙎𝙏-𝙈𝘿 𝙎𝙋𝙀𝙀𝘿: ${responseTime.toFixed(2)} s_*`;
     sock.sendMessage(m.from, { text }, { quoted: m });
   }
 }
