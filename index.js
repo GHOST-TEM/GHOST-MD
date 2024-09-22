@@ -95,8 +95,8 @@ async function start() {
                 }
             } else if (connection === 'open') {
                 if (initialConnection) {
-                    console.log(chalk.green("👻 Integration Successful️ ✅"));
-                    Matrix.sendMessage(Matrix.user.id, { text: `👻 Integration Successful️ ✅` });
+                    console.log(chalk.green("👻 GHOST-MD BOT Successful️ ✅"));
+                    Matrix.sendMessage(Matrix.user.id, { text: `👻 GHOST-MD BOT Successful️ ✅` });
                     initialConnection = false;
                 } else {
                     console.log(chalk.blue("♻️ Connection reestablished after restart."));
