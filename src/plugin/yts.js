@@ -33,7 +33,7 @@ const song = async (m, Matrix) => {
     if (!text) return m.reply('Please provide a YouTube URL or search query');
 
     try {
-      await m.React("🕘");
+      await m.React("🎥");
 
       // Search YouTube for the provided query
       const searchResult = await yts(text);
@@ -52,7 +52,7 @@ const song = async (m, Matrix) => {
           "header": "",
           "title": video.title,
           "description": ``,
-          "id": `🎦video_${uniqueId}` 
+          "id": `🎥video_${uniqueId}` 
         };
       });
 
@@ -76,7 +76,7 @@ const song = async (m, Matrix) => {
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `☠️GHOST-MD Video DOWNLODING....\n\n`
+                text: `☠️GHOST-MD VIDEO DOWNLODING....\n\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
                 text: "© POWERD BY GHOST-MD"
@@ -93,7 +93,7 @@ const song = async (m, Matrix) => {
                   {
                     name: "single_select",
                     buttonParamsJson: JSON.stringify({
-                      title: "🔖 Select a video",
+                      title: "GHOST-MD BOT VIDEO SELETE",
                       sections: [
                         {
                           title: "😎 Top 10 YouTube Results - Videos",
@@ -143,7 +143,7 @@ const song = async (m, Matrix) => {
     }
   } else if (selectedId) { 
     const isAudio = selectedId.startsWith('🎵audio_');
-    const key = parseInt(selectedId.replace(isAudio ? '🎵audio_' : '🎦video_', ''));
+    const key = parseInt(selectedId.replace(isAudio ? '🎵audio_' : '🎥video_', ''));
     const selectedVideo = videoMap.get(key);
 
     if (selectedVideo) {
