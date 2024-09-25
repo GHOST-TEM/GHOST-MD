@@ -47,6 +47,13 @@ _________________________________________
       {
         "name": "quick_reply",
         "buttonParamsJson": JSON.stringify({
+          display_text: "OWNER",
+          id: `${prefix}owner`
+        })
+     },
+      {
+        "name": "quick_reply",
+        "buttonParamsJson": JSON.stringify({
           display_text: "PING",
           id: `${prefix}ping`
         })
