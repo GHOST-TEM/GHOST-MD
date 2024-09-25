@@ -1,12 +1,11 @@
 import pkg, { prepareWAMessageMedia } from '@whiskeysockets/baileys';
 const { generateWAMessageFromContent, proto } = pkg;
 import axios from 'axios';
-import config from '../../config.cjs';
 
 const searchRepo = async (m, Matrix) => {
-  const prefix = config.PREFIX;
-const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
-const text = m.body.slice(prefix.length + cmd.length).trim();
+  const prefixMatch = m.body.match(/^[\\/!#.]/);
+  const prefix = prefixMatch ? prefixMatch[0] : '/';
+  const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).split(' ')[0].toLowerCase() : '';
 
   const validCommands = ['repo', 'sc', 'script'];
 
@@ -38,7 +37,7 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
 *_Forks:_* ${forks_count}
 *_Created At:_* ${new Date(created_at).toLocaleDateString()}
 *_Last Updated:_* ${new Date(updated_at).toLocaleDateString()}
-*_Owner:_* ${owner.login}
+*_Owner:_* ᴄʏʙᴇʀ ɢʜᴏꜱᴛ
     `;
 
     const repoMessage = generateWAMessageFromContent(m.from, {
@@ -69,17 +68,17 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
             nativeFlowMessage: proto.Message.InteractiveMessage.NativeFlowMessage.create({
               buttons: [
                 {
-                  name: 'quick_reply',
+                  name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
                     display_text: 'Contact Owner',
-                    id: `${prefix}owner`,
+                    url: 'https://wa.me/+94741140620?text=*❝𝙷𝙴𝚈◹𝙶𝙷𝙾𝚂𝚃✗𝙿𝚁𝙾𝙶𝚁𝙰𝙼𝙴𝚁❞⛺',
                   }),
                 },
                 {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
                     display_text: 'Click Here To Fork',
-                    url: repoUrl.replace('api.', '').replace('repos/', '/forks/'),
+                    url: 'https://github.com/GHOST-MD-V3/GHOST-V3-MD.git',
                   }),
                 },
                 {
