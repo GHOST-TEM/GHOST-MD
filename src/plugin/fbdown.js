@@ -80,7 +80,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `*GHOST-MD FACEBOOK POST DOWNLOADING*\n\n> *TITLE*: ${fbData.title}`
+                text: `*GHOST-MD FACEBOOK POST DOWNLOADING......*\n\n> *TITLE*: ${fbData.title}`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
                 text: "© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ɢʜᴏꜱᴛ-ᴍᴅ"
