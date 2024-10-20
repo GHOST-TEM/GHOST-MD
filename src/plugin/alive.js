@@ -29,10 +29,10 @@ const alive = async (m, Matrix) => {
     const uptimeMessage = `*☠️ GHOST-MD ALIVE MSG ☠️*
 _________________________________________
 
-*📆 ${days} Day(s)*
-*🕰️ ${hours} Hour(s)*
-*⏳ ${minutes} Minute(s)*
-*⏲️ ${seconds} Second(s)*
+*👾 ${days} Day(s)*
+*💀 ${hours} Hour(s)*
+*☠️ ${minutes} Minute(s)*
+*👻 ${seconds} Second(s)*
 _________________________________________
 `;
     
