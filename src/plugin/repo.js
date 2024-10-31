@@ -10,7 +10,7 @@ const searchRepo = async (m, Matrix) => {
   const validCommands = ['repo', 'sc', 'script'];
 
   if (validCommands.includes(cmd)) {
-    const repoUrl = `https://github.com/GHOST-MD-V3/GHOST-V3-MD.git`;
+    const repoUrl = `https://github.com/GHOST-TEM/GHOST-MD.git`;
     
     await handleRepoCommand(m, Matrix, repoUrl);
   }
@@ -70,22 +70,22 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
                 {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
-                    display_text: 'Contact Owner',
-                    url: 'https://wa.me/+94741140620?text=*❝𝙷𝙴𝚈◹𝙶𝙷𝙾𝚂𝚃✗𝙿𝚁𝙾𝙶𝚁𝙰𝙼𝙴𝚁❞⛺',
+                    display_text: 'GHOST-MD',
+                    url: 'https://wa.me/+94741140620?text=*❝𝙷𝙴𝚈◹𝙶𝙷𝙾𝚂𝚃✗𝙿𝚁𝙾𝙶𝚁𝙰𝙼𝙴𝚁❞⛺'',
                   }),
                 },
                 {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
-                    display_text: 'Click Here To Fork',
-                    url: 'https://github.com/GHOST-MD-V3/GHOST-V3-MD.git',
+                    display_text: 'GITHUB REPO',
+                    url: 'https://github.com/GHOST-TEM/GHOST-MD.git',
                   }),
                 },
                 {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
-                    display_text: 'Join Our Community',
-                    url: 'https://whatsapp.com/channel/0029VaobbRhG8l5Mmhh2IA3O',
+                    display_text: 'WHATSAPP GROUP',
+                    url: 'https://chat.whatsapp.com/DhCdan60qzH0yoIxmybU3i',
                   }),
                 },
               ],
