@@ -4,7 +4,7 @@
   "keywords": [
     "whatsapp bot"
   ],
-  "repository": "https://github.com/GHOST-V1-MD/GHOST-MD.git",
+  "repository": "https://github.com/GHOST-TEM/GHOST-MD.git",
   "stack": "container",
   "env": { 
       "SESSION_ID": {
